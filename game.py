@@ -59,7 +59,7 @@ def logger(bird):
     """
     global generation
     keras.backend.clear_session()
-    path_model = f'./training/model-{generation}.ckpt'
+    path_model = f'./training/model-{generation}.h5'
     bird.save_brain(path_model)
     logging.info(f'{generation}, {bird.score}, {bird.fitness}, {path_model}')
 
